@@ -1,0 +1,45 @@
+<ion-header no-border>
+    <ion-toolbar color="primary">
+        <ion-title>Home</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button color="light" (click)="prosesLogout()">
+                <ion-icon slot="icon-only" name="exit"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-button (click)="gohospital()">
+                <ion-icon name="medkit" slot="start"></ion-icon>
+            </ion-button>
+            <ion-label>Hospital</ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-button (click)="gopolice()">
+                <ion-icon name="man" slot="start"></ion-icon>
+            </ion-button>
+            <ion-label>Police Station</ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-button (click)="gofire()">
+                <ion-icon name="flame" slot="start"></ion-icon>
+            </ion-button>
+            <ion-label>Fire Station</ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-button (click)="mycontact()">
+                <ion-icon name="people" slot="start"></ion-icon>
+            </ion-button>
+            <ion-label>My contact</ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

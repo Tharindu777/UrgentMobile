@@ -1,0 +1,23 @@
+<ion-header no-border>
+    <ion-toolbar color="primary">
+        <ion-title>CONTACT</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <div class="">
+            <ion-item>
+                <ion-input type="text" placeholder="Name" [(ngModel)]="Name"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" placeholder="Telephone No." [(ngModel)]="Telephone_No"></ion-input>
+            </ion-item>
+            <ion-button expand="full" class="ion-padding" *ngIf="id==0" color="success" (click)="crudAction('Create')" [disabled]="disabledButton">Submit</ion-button>
+            <ion-button expand="full" class="ion-padding" *ngIf="id!=0" color="primary" (click)="crudAction('Update')" [disabled]="disabledButton">Update</ion-button>
+        </div>
+    </ion-list>
+</ion-content>
